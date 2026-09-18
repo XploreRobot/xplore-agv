@@ -65,7 +65,7 @@ Sistem ini menjembatani hasil rancangan mekanik Faisal dan jalur komunikasi data
 * `agv[1/2]/control/home` *(Siklus Push-button Home-Porting)*
 * `agv[1/2]/control/emergency` *(Sinyal henti darurat seketika)*
 * `agv[1/2]/control/continue` *(Sinyal melanjutkan rute aman)*
-* `agv[1/2]/control/forward`, `agv[1/2]/control/reverse` *(Kendali gerak manual)*
+* `agv[1/2]/control/forward`, `agv[1/2]/control/reverse` *(Kendali gerak manual conveyor)*
 * `agv[1/2]/control/sens`, `agv[1/2]/control/del` *(Kalibrasi parameter AGV)*
 
 ---
