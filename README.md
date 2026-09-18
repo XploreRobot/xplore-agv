@@ -10,7 +10,7 @@ Sistem FMS (Fleet Management System) ini dirancang untuk mengintegrasikan keanda
 
 ## Tim Pengembang
 Proyek ini dikembangkan melalui kolaborasi multidisiplin:
-* **[Putri Amelia](https://github.com/Onyourlia06)** — *Web Developer* ([putria5678@gmail.com](mailto:putria5678@gmail.com))
+* **[Putri Amelia](https://github.com/Onyourlia06)** — *Web Developer* 
   Membangun sistem *frontend* interaktif, visualisasi peta 2D, *trail history*, serta *backend* jembatan komunikasi WebSocket.
 * **[Faisal](https://github.com/faisalahmadf2112-web)** — *Mechanic*
   Merancang arsitektur mekanis, sasis, sistem penggerak (aktuator), dan integrasi komponen fisik pada robot AGV agar dapat bermanuver presisi di lapangan.
