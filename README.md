@@ -22,7 +22,7 @@ Proyek ini dikembangkan melalui kolaborasi multidisiplin:
 ## Fitur Utama
 
 * **Live AGV Tracking** 
-  Pemantauan posisi visual secara *real-time* untuk armada robot (AGV-01 dan AGV-02) di atas peta antarmuka.
+  Pemantauan posisi visual secara *real-time* untuk robot (AGV-01 dan AGV-02) di atas peta antarmuka.
 * **Interactive Map System** 
   Peta jalur kustom berukuran ~190 × 152 cm dengan fitur navigasi *Pan / Drag* visual yang intuitif tanpa mengubah data koordinat absolut mikrokontroler.
 * **Trail History** 
