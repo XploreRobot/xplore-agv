@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 Xplore AGV</h1>
+  <h1>Xplore AGV</h1>
   <h3>Fleet Management System (FMS)</h3>
   <p><em>Sistem terpusat pintar untuk pemantauan dan kendali armada Automated Guided Vehicle (AGV) secara real-time.</em></p>
 </div>
@@ -10,33 +10,33 @@ Sistem FMS (Fleet Management System) ini dirancang untuk mengintegrasikan keanda
 
 ## 👥 Tim Pengembang
 Proyek ini dikembangkan melalui kolaborasi multidisiplin:
-* **💻 Putri Amelia** — *Web Developer* ([putria5678@gmail.com](mailto:putria5678@gmail.com))
+* **[Putri Amelia](https://github.com/Onyourlia06)** — *Web Developer*
   Membangun sistem *frontend* interaktif, visualisasi peta 2D, *trail history*, serta *backend* jembatan komunikasi WebSocket.
-* **⚙️ Faisal** — *Mechanic*
+* **Faisal** — *Mechanic*
   Merancang arsitektur mekanis, sasis, sistem penggerak (aktuator), dan integrasi komponen fisik pada robot AGV agar dapat bermanuver presisi di lapangan.
-* **📡 Zaidan** — *Data Communication*
-  Mengelola arsitektur telemetri IoT, memastikan stabilitas transmisi data sensor/odometri dari mikrokontroler (ESP32/PLC) ke MQTT Broker tanpa hambatan (*low-latency*).
+* **Zaidan** — *Data Communication*
+  Mengelola arsitektur telemetri IoT, memastikan stabilitas transmisi data sensor/odometri dari mikrokontroler (ESP32) ke MQTT Broker tanpa hambatan (*low-latency*).
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-* 🎯 **Live AGV Tracking** 
+* **Live AGV Tracking** 
   Pemantauan posisi visual secara *real-time* untuk armada robot (AGV-01 dan AGV-02) di atas peta antarmuka.
-* 🗺️ **Interactive Map System** 
+* **Interactive Map System** 
   Peta jalur kustom berukuran ~190 × 152 cm dengan fitur navigasi *Pan / Drag* visual yang intuitif tanpa mengubah data koordinat absolut mikrokontroler.
-* 🛤️ **Trail History** 
+* **Trail History** 
   Visualisasi *real-time* berupa garis jejak (*trail*) dinamis yang merekam rute pergerakan yang telah dilewati oleh setiap unit AGV.
-* 📊 **Telemetry & Homing Status** 
+* **Telemetry & Homing Status** 
   Pemantauan langsung titik koordinat (X, Y) dalam satuan milimeter, arah hadap (*heading* / theta), dan deteksi otomatis saat AGV mengaktifkan mode *Homing* untuk kembali ke pangkalan.
-* ⚡ **Real-time Communication** 
+* **Real-time Communication** 
   Sinkronisasi penuh dengan broker MQTT untuk komunikasi tingkat *hardware* dan WebSocket untuk mendistribusikan pembaruan data secara instan ke *dashboard* React.
-* 🎮 **Centralized Control** 
+* **Centralized Control** 
   Pusat kendali operasional langsung dari web (Maju, Mundur, *Emergency Stop*, *Continue*, *Home*, kalibrasi sensor, dan pengaturan parameter PID).
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Kategori | Teknologi |
 | :--- | :--- |
@@ -47,13 +47,13 @@ Proyek ini dikembangkan melalui kolaborasi multidisiplin:
 
 ---
 
-## 📡 Arsitektur Sistem & Alur Data
+## Arsitektur Sistem & Alur Data
 
 Sistem ini menjembatani hasil rancangan mekanik Faisal dan jalur komunikasi data Zaidan ke dalam *dashboard* visual Putri Amelia. Alur datanya beroperasi dua arah:
 
 > `AGV (Sensor & Mekanik) ↔ MQTT Broker ↔ Node.js Backend ↔ WebSocket ↔ React Web UI`
 
-### 📋 Topik MQTT yang Digunakan
+### Topik MQTT yang Digunakan
 
 **Monitor (Subscribe dari AGV ke Web):**
 * `agv1/monitor/livetrack`, `agv2/monitor/livetrack` *(Data koordinat X, Y, Theta)*
@@ -70,7 +70,7 @@ Sistem ini menjembatani hasil rancangan mekanik Faisal dan jalur komunikasi data
 
 ---
 
-## 💻 Instalasi dan Penggunaan
+## Instalasi dan Penggunaan
 
 **1. Clone Repository**
 ```bash
