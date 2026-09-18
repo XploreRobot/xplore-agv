@@ -8,13 +8,13 @@
 
 Sistem FMS (Fleet Management System) ini dirancang untuk mengintegrasikan keandalan perangkat keras mekanik, kecepatan lalu lintas data IoT, dan antarmuka web interaktif ke dalam satu ekosistem yang mulus. Proyek ini memfasilitasi pelacakan titik koordinat presisi tinggi, pemantauan status operasional (termasuk mode *homing*), serta eksekusi kendali jarak jauh untuk multi-AGV melalui perpaduan protokol MQTT dan WebSocket.
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 Proyek ini dikembangkan melalui kolaborasi multidisiplin:
-* **[Putri Amelia](https://github.com/Onyourlia06)** — *Web Developer*
+* **[Putri Amelia](https://github.com/Onyourlia06)** — *Web Developer* ([putria5678@gmail.com](mailto:putria5678@gmail.com))
   Membangun sistem *frontend* interaktif, visualisasi peta 2D, *trail history*, serta *backend* jembatan komunikasi WebSocket.
-* **Faisal** — *Mechanic*
+* **[Faisal](https://github.com/faisalahmadf2112-web)** — *Mechanic*
   Merancang arsitektur mekanis, sasis, sistem penggerak (aktuator), dan integrasi komponen fisik pada robot AGV agar dapat bermanuver presisi di lapangan.
-* **Zaidan** — *Data Communication*
+* **[Zaidan](https://github.com/BakarRotiBang)** — *Data Communication*
   Mengelola arsitektur telemetri IoT, memastikan stabilitas transmisi data sensor/odometri dari mikrokontroler (ESP32) ke MQTT Broker tanpa hambatan (*low-latency*).
 
 ---
@@ -51,7 +51,7 @@ Proyek ini dikembangkan melalui kolaborasi multidisiplin:
 
 Sistem ini menjembatani hasil rancangan mekanik Faisal dan jalur komunikasi data Zaidan ke dalam *dashboard* visual Putri Amelia. Alur datanya beroperasi dua arah:
 
-> `AGV (Sensor & Mekanik) ↔ MQTT Broker ↔ Node.js Backend ↔ WebSocket ↔ React Web UI`
+> `AGV (Sensor & Mekanik) <-> MQTT Broker <-> Node.js Backend <-> WebSocket <-> React Web UI`
 
 ### Topik MQTT yang Digunakan
 
@@ -70,9 +70,20 @@ Sistem ini menjembatani hasil rancangan mekanik Faisal dan jalur komunikasi data
 
 ---
 
-## Instalasi dan Penggunaan
+## Langkah Instalasi dan Menjalankan Proyek
+
+Ikuti panduan berikut untuk menjalankan sistem ini di komputer lokal Anda:
+
+### Prasyarat (Prerequisites)
+Pastikan perangkat Anda sudah terinstal:
+* **Node.js** (Disarankan versi 16+ atau terbaru)
+* **Git**
+* Terhubung dengan jaringan WiFi/LAN lokal yang sama dengan perangkat **MQTT Broker** (EMQX/Mosquitto) dan AGV.
+
+### Langkah-Langkah
 
 **1. Clone Repository**
+Unduh kode sumber proyek dari GitHub ke folder komputer Anda:
 ```bash
 git clone [https://github.com/XploreRobot/xplore-agv.git](https://github.com/XploreRobot/xplore-agv.git)
 cd xplore-agv
