@@ -1,0 +1,442 @@
+/* =========================================================
+   MONITORING PAGE
+========================================================= */
+.monitoring-page {
+    padding: 30px;
+    padding-top: 20px;
+    background: #f8f9ff;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    color: #0b2d5c;
+    margin-bottom: 6px;
+}
+
+.page-header p {
+    color: #64748b;
+}
+
+.monitoring-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.monitor-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid #d6dce8;
+    box-shadow: 0 4px 14px rgba(15, 35, 65, .07);
+}
+
+.monitor-card h2 {
+    margin-bottom: 20px;
+    color: #0b2d5c;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e6ef;
+    padding-bottom: 12px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.info-row:last-child {
+    border: none;
+}
+
+.info-row span:first-child {
+    color: #64748b;
+}
+
+.info-row span:last-child {
+    color: #0b1c30;
+    font-weight: 600;
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.running {
+    background: #dff5e8;
+    color: #198754;
+}
+
+.loading {
+    background: #e4edff;
+    color: #2f66c9;
+}
+
+.connected {
+    background: #dff5e8;
+    color: #198754;
+}
+
+.disconnected {
+    background: #fde2e2;
+    color: #c62828;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* =========================================================
+   AGV SECTION DIVIDER
+========================================================= */
+.agv-divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 10px 0 22px;
+}
+
+.agv-divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #cbd5e1);
+}
+
+.agv-divider-line:last-child {
+    background: linear-gradient(90deg, #cbd5e1, transparent);
+}
+
+.agv-divider-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px;
+    background: linear-gradient(145deg, #ffffff, #f1f5fb);
+    border: 1px solid #d6dce8;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(15, 35, 65, .06);
+}
+
+.agv-divider-title {
+    color: #0b2d5c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.agv-divider-topic {
+    padding-left: 10px;
+    border-left: 1px solid #d6dce8;
+    color: #64748b;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.agv-section-gap {
+    height: 42px;
+}
+
+/* =========================================================
+   PID / FMS SENSOR CHART — AESTHETIC + RESPONSIVE
+========================================================= */
+.pid-chart-wrapper {
+    width: 100%;
+    margin-top: 28px;
+    padding: 22px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #d6dce8;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(15, 35, 65, .07);
+}
+
+.pid-chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.pid-chart-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pid-chart-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #eaf1ff;
+    border: 1px solid #c8daf8;
+    color: #2f66c9;
+    font-size: 18px;
+}
+
+.pid-chart-header h3 {
+    margin: 0;
+    color: #0b2d5c;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.pid-chart-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pid-ref-value {
+    min-width: 92px;
+    padding: 9px 14px;
+    border-radius: 11px;
+    background: #f4f7fc;
+    border: 1px solid #d6dce8;
+    text-align: right;
+}
+
+.pid-ref-value span {
+    display: block;
+    margin-bottom: 2px;
+    color: #7b8799;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pid-ref-value strong {
+    color: #0b2d5c;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.pid-chart {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 6px 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #f8faff;
+    border: 1px solid #d6dce8;
+    border-radius: 14px;
+}
+
+.pid-chart-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+}
+
+.pid-grid-line {
+    stroke: #dce2ec;
+    stroke-width: 1;
+    stroke-dasharray: 3 5;
+}
+
+.pid-axis {
+    stroke: #9aa8bb;
+    stroke-width: 1.2;
+}
+
+.pid-y-label {
+    fill: #64748b;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.pid-ref-line {
+    stroke: #c62828;
+    stroke-width: 2;
+    stroke-dasharray: 8 6;
+    opacity: 0.9;
+}
+
+.pid-ref-pill {
+    fill: #fde2e2;
+    stroke: #e7a4a4;
+    stroke-width: 1;
+}
+
+.pid-ref-label {
+    fill: #a51f1f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pid-hover-zone {
+    fill: transparent;
+    cursor: crosshair;
+}
+
+.pid-bar {
+    fill: #2f66c9;
+    opacity: 0.9;
+    filter: drop-shadow(0 5px 8px rgba(47, 102, 201, .16));
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    transform-box: fill-box;
+    transform-origin: center bottom;
+}
+
+.pid-bar-group:hover .pid-bar,
+.pid-bar-group.is-hovered .pid-bar {
+    opacity: 1;
+    transform: scaleX(1.08);
+}
+
+.pid-bar-value {
+    fill: #0b2d5c;
+    font-size: 11px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.pid-x-label {
+    fill: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.pid-tooltip {
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    z-index: 5;
+    min-width: 118px;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    pointer-events: none;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(15, 35, 65, .12);
+    text-align: left;
+}
+
+.pid-tooltip span,
+.pid-tooltip strong,
+.pid-tooltip small {
+    display: block;
+}
+
+.pid-tooltip span {
+    color: #2f66c9;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pid-tooltip strong {
+    margin-top: 2px;
+    color: #0b2d5c;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.pid-tooltip small {
+    margin-top: 2px;
+    color: #7b8799;
+    font-size: 9px;
+}
+
+.pid-chart-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 13px;
+}
+
+.pid-chart-legend {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pid-chart-legend span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.pid-legend-bar {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    background: #2f66c9;
+}
+
+.pid-legend-line {
+    display: inline-block;
+    width: 22px;
+    height: 0;
+    border-top: 2px dashed #c62828;
+}
+
+.pid-hover-hint {
+    color: #7b8799;
+    font-size: 11px;
+}
+
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES
+========================================================= */
+@media (max-width: 1000px) {
+    .monitoring-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .pid-chart-wrapper {
+        padding: 16px;
+    }
+
+    .pid-chart-header {
+        align-items: flex-start;
+    }
+
+    .pid-chart-header h3 {
+        font-size: 15px;
+    }
+
+    .pid-chart-header p {
+        font-size: 11px;
+    }
+
+    .pid-chart {
+        height: 300px;
+    }
+
+    .pid-chart-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pid-hover-hint {
+        display: none;
+    }
+}

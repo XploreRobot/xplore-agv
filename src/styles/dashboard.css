@@ -1,0 +1,73 @@
+/* ===========================================
+   DASHBOARD CONTAINER
+=========================================== */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ===========================================
+   LIVE MAP
+=========================================== */
+.live-map {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #d6dce8;
+    box-shadow: 0 4px 14px rgba(15, 35, 65, .07);
+}
+
+.map-title {
+    color: #0b2d5c;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map-area {
+    position: relative;
+    height: 420px;
+    background: #f1f5fb;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dce2ec;
+}
+
+/* ===========================================
+   AGV MARKER
+=========================================== */
+.agv {
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    font-size: 38px;
+    transition: .3s;
+}
+
+/* ===========================================
+   STATUS CARDS
+=========================================== */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.status-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #d6dce8;
+    box-shadow: 0 4px 14px rgba(15, 35, 65, .07);
+}
+
+.status-card h4 {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.status-card h2 {
+    color: #0b2d5c;
+    font-size: 28px;
+}
